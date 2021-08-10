@@ -1,0 +1,20 @@
+body {
+    background: #0f121f;
+    backgorund-image: url(stars.jpg);
+    backgorund-repeat-y: no-repeat;
+    color:#fff;
+}
+
+body *{
+    font-family: Verdena;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
