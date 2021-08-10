@@ -1,13 +1,25 @@
+{% load static from static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Articles</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Base Layout</title>
+    <link rel="stylesheet" href="{% static 'assets/styles.css' %}">
 </head>
 <body>
 <div class="wrapper">
-
+    <h1></h1>
+    <nav>
+        <ul>
+            <li>
+                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
     {% block content %}
     {% endblock %}
 </div>

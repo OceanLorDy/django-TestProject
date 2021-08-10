@@ -1,7 +1,7 @@
 body {
-    background: #0f121f;
-    backgorund-image: url(stars.jpg);
-    backgorund-repeat-y: no-repeat;
+    background-color: blue;
+    background-image: url(stars.jpg);
+    background-repeat: no-repeat;
     color:#fff;
 }
 
