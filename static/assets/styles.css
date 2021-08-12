@@ -1,20 +1,64 @@
 body {
-    background-color: blue;
-    background-image: url(stars.jpg);
+    background-color: aqua;
     background-repeat: no-repeat;
-    color:#fff;
+    background-size: 1024px;
+    background-image: url("app4k.jpg");
 }
 
-body *{
-    font-family: Verdena;
-}
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
     font-weight: normal;
     margin: 0;
 }
 
-a, a:hover, a:visited{
-    color: #fff;
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto auto 0;
+
+    height: 100%;
+    width: 100%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 150px;
+    padding: 0px 10px;
 }

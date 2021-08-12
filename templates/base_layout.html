@@ -1,25 +1,19 @@
-{% load static from static %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>AMAZONw2  {% block page_title %}{% endblock %}</title>
     <meta charset="UTF-8">
-    <title>Base Layout</title>
     <link rel="stylesheet" href="{% static 'assets/styles.css' %}">
 </head>
 <body>
 <div class="wrapper">
-    <h1></h1>
-    <nav>
-        <ul>
-            <li>
-                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
-                    {% csrf_token %}
-                    <button type="submit">Logout</button>
-                </form>
-            </li>
-        </ul>
-    </nav>
+
+    {% include "layout/_sidebar.html" %}
+
+    <h1>YOU ARE WELCOME</h1>
+
     {% block content %}
     {% endblock %}
 </div>

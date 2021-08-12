@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Ma</h1>
-</body>
-</html>
+{% extends 'base_layout.html' %}
+{% load static from static %}
+
+{% block page_title %}Ana Sayfa{% endblock %}
+
+{% block content %}
+    <div>
+        <img src="{% static '/assets/app4k.jpg' %}">
+    </div>
+{% endblock %}
