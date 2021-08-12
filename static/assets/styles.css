@@ -9,6 +9,7 @@ body {
 h1, h2, h3, h4, h5 {
     font-weight: normal;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -36,14 +37,14 @@ img {
 
 .sidenav {
     height: 100%;
-    width: 150px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: blueviolet;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .sidenav a {
