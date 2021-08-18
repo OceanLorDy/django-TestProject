@@ -9,7 +9,7 @@ def index(response, id):
 
 
 def home(response, id=None):
-    return render(response, "base.html", {})
+    return render(response, "dashboard/base.html", {})
 
 
 def homepage(request):
