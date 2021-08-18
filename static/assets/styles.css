@@ -79,7 +79,7 @@ div.scrollmenu {
 }
 
 div.scrollmenu a {
-    display: inline-block;
+    display: block;
     color: black;
     text-align: center;
     padding: 14px;
@@ -118,7 +118,6 @@ div.scrollmenu a:hover {
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 /* Links inside the dropdown */
@@ -138,3 +137,4 @@ div.scrollmenu a:hover {
 .show {
     display: block;
 }
+

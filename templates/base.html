@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Stlylesheet -->
+    <link rel="stylesheet" type="text/css" href={% static "asst/bootstrap/css/bootstrap.min.css" %}/>
+    <link rel="stylesheet" type="text/css" href={% static "asst/css/font-awesome/css/font-awesome.css" %}/>
+    <link rel="stylesheet" type="text/css" href={% static "asst/css/style.css" %}/>
+    <link rel="stylesheet" type="text/css" href={% static "asst/css/no-ui-slider/jquery.nouislider.css" %}/>
+
+    <!-- Skin Color -->
+    <link rel="stylesheet" id="color-skins" href={% static "css/colors/green.css" %}/>
+</head>
+
+<body>
+<div id="loader">
+    <div class="spinner">
+        <div class="cube cube0"></div>
+        <div class="cube cube1"></div>
+        <div class="cube cube2"></div>
+        <div class="cube cube3"></div>
+        <div class="cube cube4"></div>
+        <div class="cube cube5"></div>
+        <div class="cube cube6"></div>
+        <div class="cube cube7"></div>
+        <div class="cube cube8"></div>
+        <div class="cube cube9"></div>
+        <div class="cube cube10"></div>
+        <div class="cube cube11"></div>
+        <div class="cube cube12"></div>
+        <div class="cube cube13"></div>
+        <div class="cube cube14"></div>
+        <div class="cube cube15"></div>
+    </div>
+</div>
+
+{% include "visual/header.html" %}
+{% include "visual/section.html" %}
+{% include "visual/site-wrap.html" %}
+
+{% block content %}
+{% endblock %}
+
+<script type="text/javascript" src={% static "asst/js/plugins/jquery.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/bootstrap/js/bootstrap.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/moderniz.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/smoothscroll.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/no-ui-slider/jquery.nouislider.all.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/revslider.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/waypoints.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/parallax.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/easign1.3.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/cubeportfolio.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/owlcarousel.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/tweetie.min.js" %}></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src={% static "asst/js/plugins/gmap3.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/wow.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/plugins/counterup.min.js" %}></script>
+<script type="text/javascript" src={% static "asst/js/scripts.js" %}></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ urlpatterns = [
     path("detail/<int:id>", views.index, name="index"),
     path("articles/", include('articles.urls')),
     path("about/", views.about, name="about"),
+    path("product/", include('product.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

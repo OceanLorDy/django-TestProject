@@ -1,0 +1,28 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+    <div class="card-body">
+        <h4>Fast Food List</h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Money</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for fastfood in ff %}
+                <tr>
+                    <td>{{ fastfood.title }}</td>
+                    <td>{{ fastfood.price }}</td>
+                    <td><a type="button" class="btn btn-warning"
+                           href="{% url 'fast-food-update' fastfood.id %}">Update</a>
+                        <a type="button" class="btn btn-danger" href="/fast-food-delete/{{ fastfood.id }}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <a type="button" class="btn btn-success" href="{% url 'fast-food-create' %}">Create</a>
+    </div>
+{% endblock %}
